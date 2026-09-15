@@ -2346,6 +2346,119 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#f4f7fb}
   }
 }
 
+
+
+/* MOBILE POLISH: smaller top-level section titles + aligned Top 20 title */
+@media(max-width:820px){
+  /* Main section titles such as Income Statement · Consolidated,
+     Balance Sheet · Consolidated, Valuation, Shareholders, etc. */
+  .sectionTitle{
+    font-size:19px!important;
+    line-height:1.2!important;
+    margin-bottom:4px!important;
+  }
+
+  /* Match Top 20 Shareholders title to Board share ownership */
+  #shareholders .topShareholdersHead h3{
+    font-size:16.5px!important;
+    line-height:1.24!important;
+    font-weight:800!important;
+  }
+
+  /* Slightly larger Top 20 table headers only */
+  #shareholders #topShareholdersTable th{
+    font-size:13.2px!important;
+    line-height:1.25!important;
+    font-weight:800!important;
+  }
+}
+
+@media(max-width:620px){
+  .sectionTitle{
+    font-size:18px!important;
+    line-height:1.18!important;
+  }
+
+  #shareholders .topShareholdersHead h3{
+    font-size:16px!important;
+    line-height:1.22!important;
+  }
+
+  #shareholders #topShareholdersTable th{
+    font-size:12.9px!important;
+    line-height:1.24!important;
+  }
+}
+
+
+
+/* MOBILE TWEAK: smaller selected metric summary + year selectors
+   for Income Statement and Balance Sheet only */
+@media(max-width:820px){
+  #income .metricPickerButton,
+  #balance .metricPickerButton,
+  #income .metricButton,
+  #balance .metricButton{
+    font-size:12.5px!important;
+    line-height:1.2!important;
+  }
+
+  #income .metricPickerButton span,
+  #balance .metricPickerButton span,
+  #income .metricButton span,
+  #balance .metricButton span{
+    font-size:12.5px!important;
+    line-height:1.2!important;
+  }
+
+  #income .controls select,
+  #balance .controls select,
+  #income select[id$="FromYear"],
+  #income select[id$="ToYear"],
+  #balance select[id$="FromYear"],
+  #balance select[id$="ToYear"]{
+    font-size:12px!important;
+    line-height:1.2!important;
+  }
+
+  #income .controls .controlLabel,
+  #balance .controls .controlLabel,
+  #income .controls label,
+  #balance .controls label{
+    font-size:10.5px!important;
+  }
+}
+
+@media(max-width:620px){
+  #income .metricPickerButton,
+  #balance .metricPickerButton,
+  #income .metricButton,
+  #balance .metricButton,
+  #income .metricPickerButton span,
+  #balance .metricPickerButton span,
+  #income .metricButton span,
+  #balance .metricButton span{
+    font-size:11.8px!important;
+    line-height:1.18!important;
+  }
+
+  #income .controls select,
+  #balance .controls select,
+  #income select[id$="FromYear"],
+  #income select[id$="ToYear"],
+  #balance select[id$="FromYear"],
+  #balance select[id$="ToYear"]{
+    font-size:11.5px!important;
+  }
+
+  #income .controls .controlLabel,
+  #balance .controls .controlLabel,
+  #income .controls label,
+  #balance .controls label{
+    font-size:10px!important;
+  }
+}
+
 </style>`;
 
     const js = `
